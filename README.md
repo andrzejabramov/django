@@ -45,8 +45,13 @@
 ![screen9](screens/url_class.png)
 Результат в броузере:
 ![screen10](screens/res_class.png)
-14. Второй (упрощенный) вариант классового представления:
-
+14. Второй (упрощенный) вариант классового представления:  
+Комментируем в файле приложения views.py созданный нами класс
+![screen11](screens/view_class_comment.png)  
+Вносим изменения в файл django проекта urls.py:  
+![screen12](screens/url_class_light.png)
+Получаем нужный результат в броузере:
+![screen13](screens/res_class_light.png)
 
 
 
