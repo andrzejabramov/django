@@ -49,7 +49,7 @@
 Комментируем в файле приложения views.py созданный нами класс
 ![screen11](screens/view_class_comment.png)  
 Вносим изменения в файл django проекта urls.py:  
-![screen12](screens/url_class_light.png)
+![screen13](screens/url_class_light.png)
 Получаем нужный результат в броузере:
 ![screen13](screens/res_class_light.png)
 
