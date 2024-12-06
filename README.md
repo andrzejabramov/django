@@ -19,7 +19,7 @@
 - example1
 - example2
 - example3
-- task2
+- task2  
 Проверяем, что находимся в директории UrbanDjango  
 ```python3 manage.py startapp example1```  
 ```python3 manage.py startapp example2```  
