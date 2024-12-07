@@ -1,0 +1,18 @@
+{% extends "menu.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block pagename %}{{ text }}{% endblock %}
+
+{% block menu %}{{block.super}}{% endblock %}
+
+{% block content %}
+    <ul>
+        <h2>
+           {% for el in games %}
+            <p> {{ el }} <button>Купить</button></p>
+            {% endfor %}
+        </h2>
+    </ul>
+    <button><a href="/"><h2>Вернуться на главную</h2></a></button>
+{% endblock %}
