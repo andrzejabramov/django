@@ -52,6 +52,44 @@
 ![screen13](screens/url_class_light.png)
 Получаем нужный результат в броузере:
 ![screen13](screens/res_class_light.png)
+15. Использование переменных views в шаблоне:
+```commandline
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1 align="center">{{ text }}</h1>
+    <h2 align="center"><a href="#">Главная</a></h2>
+    <h2 align="center"><a href="/shop">Магазин</a></h2>
+    <h2 align="center"><a href="/basket">Корзина</a></h2>
+</body>
+</html>
+```
+Переменная {{ title }}  и {{ text }} подтягива.тся из файла views.py, где они определены переменной context:
+```commandline
+from django.shortcuts import render
+from django.views.generic import TemplateView
+
+#Create your views here.
+def index_func(request):
+    title = "Главная"
+    text = "Главная страница"
+    context = {
+        'title': title,
+        'text': text,
+    }
+    return render(request, 'index.html', context)
+
+# Один вариант класса:
+class index_class(TemplateView):
+    template_name = 'shop.html'
+```
 
 
 
