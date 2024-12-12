@@ -1,5 +1,4 @@
 from lib2to3.fixes.fix_input import context
-
 from django.shortcuts import render
 from django.views.generic import TemplateView
 
@@ -33,7 +32,3 @@ def shop_play(request):
         'third': third,
     }
     return render(request, 'shop.html', context)
-
-# Один вариант класса:
-# class index_class(TemplateView):
-#     template_name = 'shop.html'
